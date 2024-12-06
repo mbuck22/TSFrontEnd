@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Sale Hub</title>
+    <script type="text/javascript"
+    integrity="sha384-YUSWh0CQ0Ck2wXgObj8tXJeOqe0QLhmeONEcw5N3OIBknCB4kZxHB5pHvhrLRSFB"
+    crossorigin="anonymous"
+    src="https://cdn-cors.ethers.io/lib/ethers-5.6.7.umd.min.js">
+</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body class="container mt-5">
+    <h1 class="text-center">Ticket Sale Hub</h1>
+    
+    <div class="card mt-4 p-3">
+        <h3>Purchase Ticket</h3>
+        <input type="text" id="purchaseTicketId" placeholder="Enter Ticket ID" class="form-control">
+        <button onclick="purchaseTicket()" class="btn btn-primary mt-2">Purchase</button>
+        <p id="purchaseMessage" class="mt-2"></p>
+    </div>
+
+    <div class="card mt-4 p-3">
+        <h3>Offer Swap</h3>
+        <input type="text" id="swapTicketId" placeholder="Enter Ticket ID" class="form-control">
+        <button onclick="offerSwap()" class="btn btn-warning mt-2">Offer Swap</button>
+        <p id="swapMessage" class="mt-2"></p>
+    </div>
+
+    <div class="card mt-4 p-3">
+        <h3>Accept Offer</h3>
+        <input type="text" id="acceptTicketId" placeholder="Enter Ticket ID or Address" class="form-control">
+        <button onclick="acceptOffer()" class="btn btn-success mt-2">Accept Offer</button>
+        <p id="acceptMessage" class="mt-2"></p>
+    </div>
+
+    <div class="card mt-4 p-3">
+        <h3>Get Ticket Number</h3>
+        <input type="text" id="walletAddress" placeholder="Enter Wallet Address" class="form-control">
+        <button onclick="getTicketNumber()" class="btn btn-info mt-2">Get Ticket</button>
+        <p id="ticketMessage" class="mt-2"></p>
+    </div>
+
+    <div class="card mt-4 p-3">
+        <h3>Return Ticket</h3>
+        <button onclick="returnTicket()" class="btn btn-danger mt-2">Return Ticket</button>
+        <p id="returnMessage" class="mt-2"></p>
+    </div>
+
+    <script src="frontend.js"></script>
+</body>
+
+</html>
